@@ -92,6 +92,17 @@
 <script src="assets/front_end/js/bootstrap/bootstrap.min.js"></script>
 <script src="assets/front_end/js/plugins/plugins.js"></script>
 <script src="assets/front_end/js/active.js"></script>
+
+<script>
+    $(function(){
+            $('[data-toggle="popover"]').popover({
+                    html : true,
+                    delay : {"show":1000, "hide": 300}
+                }
+            );
+        }
+    );
+</script>
 </body>
 
 </html>

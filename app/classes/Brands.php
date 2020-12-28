@@ -4,8 +4,8 @@ class Brands
 {
     public function __construct()
     {
-        $this->link = mysqli_connect('localhost', 'root', '', 'price_now_bd');
-        //$this->link = mysqli_connect('192.168.10.5', 'pricenow_root', 'J@hir467350', 'pricenow_pricenowbd', '3306');
+        //$this->link = mysqli_connect('localhost', 'root', '', 'price_now_bd');
+        $this->link = mysqli_connect('192.168.10.5', 'pricenow_root', 'J@hir467350', 'pricenow_pricenowbd', '3306');
     }
 
     public function addBrand($filename){

@@ -5,8 +5,8 @@ class Users
 {
     public function __construct()
     {
-        $this->link = mysqli_connect('localhost', 'root', '', 'price_now_bd');
-        //$this->link = mysqli_connect('192.168.10.5', 'pricenow_root', 'J@hir467350', 'pricenow_pricenowbd', '3306');
+        //$this->link = mysqli_connect('localhost', 'root', '', 'price_now_bd');
+        $this->link = mysqli_connect('192.168.10.5', 'pricenow_root', 'J@hir467350', 'pricenow_pricenowbd', '3306');
     }
 
     public function userRegistration($data)
@@ -28,8 +28,8 @@ class Users
                     if (mysqli_query($this->link, $sql)) {
                         $message = "User Registration success. Please Login.";
                         $_SESSION['message'] = $message;
-                        return $message;
-                        //header('Location: index.php');
+                        //return $message;
+                        header('Location: index.php');
                     } else {
                         die('User Registration Query Error : ' . mysqli_error($this->link));
                     }

@@ -53,7 +53,9 @@
 
     <div class="row" style="padding: 0px 30px 0px 30px;">
         <div class="col-md-8">
-            <div style="text-align: center; background-color: #abdde5;"><h2>Specifications</h2></div>
+            <div style="text-align: center; background-color: #abdde5;"><h2>Specifications</h2><button type="button" class="btn btn-primary" data-toggle="popover" data-content="<h4>Popover</h4><p>This is a popover just like the one you see on an ipad</p>" data-trigger="hover">
+                    Button
+                </button></div>
             <div style="padding-left: 40px;">
                 <h3>Network :</h3>
                 <p style="padding-left: 40px;"><span><b>Technology--</b></span><span>GSM / CDMA / HSPA / EVDO / LTE</span></p>
@@ -253,5 +255,6 @@ GFXBench: 44fps (ES 3.1 onscreen)</span></p>
         </div>
     </div>
 </div>
+
 
 <?php include 'footerIndex.php';?>

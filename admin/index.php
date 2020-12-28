@@ -17,7 +17,7 @@ if (isset($_POST['btnLogin'])) {
     require_once('../app/classes/Users.php');
     $login = new Users();
     $message = $login->adminLoginCheck();
-    header('Location: dashboard.php');
+    //header('Location: index.php');
 }
 /*echo '<pre>';
 print_r($_SESSION);

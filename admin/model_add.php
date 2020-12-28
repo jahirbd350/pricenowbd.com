@@ -73,7 +73,7 @@ if (isset($_POST['btnAddMOdel'])) {
                                         <?php
                                             require_once '../app/classes/Brands.php';
                                             $brands = new Brands();
-                                            $allBrands = $brands->getAllActiveBrandName();
+                                            $allBrands = $brands->getAllBrandName();
                                             while ($brandsInfo = mysqli_fetch_assoc($allBrands)){ ?>
                                                 <option value="<?php echo $brandsInfo['brand_name']?>"><?php echo $brandsInfo['brand_name']?></option>
                                          <?php } ?>

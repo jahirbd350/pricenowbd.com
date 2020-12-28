@@ -63,7 +63,7 @@
                     <tbody>
                         <tr>
                             <td style="padding: 0.3rem;" width="15%"><b>Technology</b></td>
-                            <td id="btnToggle" style="padding: 0.3rem;" width="85%"><a href="#">GSM / HSPA / LTE / 5G <input id="btnToggle" class="pull-right" type="button" value="Expand" name="btnPassport" /></a></td>
+                            <td id="btnToggle" style="padding: 0.3rem;" width="85%"><a href="#">GSM / HSPA / LTE / 5G <input data-toggle="popover" data-placement="top" data-content="<p class='text-info'>Click to explore more about Technology!</p>" data-trigger="hover"  id="btnToggle" class="pull-right" type="button" value="Expand" name="btnPassport" /></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -474,4 +474,4 @@
     });
 </script>
 
-<?php include 'front_end/footer.php';?>
+<?php include 'footerIndex.php';?>
